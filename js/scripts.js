@@ -27,6 +27,8 @@ $(document).ready(function(){
     $("#robot").hide();
     $("#robot").slideToggle();
     $("#numberList").empty();
+    $(".jumbotron").addClass("jumbotronSubmit");
+    $("body").addClass("bodySubmit");
     var userInput = $("input#inputNumber").val();
     output(userInput);
   });

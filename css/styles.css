@@ -4,6 +4,10 @@
 #robot{
   display: none;
 }
-.submitted{
+.bodySubmit{
   background-image: url('../img/disco.gif');
+}
+
+.jumbotronSubmit{
+  background: none;
 }
