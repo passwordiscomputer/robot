@@ -1,3 +1,17 @@
+#_Specs_
+  1. Program takes in a number and returns numbers between 1 and that number
+  Example Input:7
+  Example Output: 0 1 2 3 4 5 6 7
+  2. Program replaces digits containing 0 with "Beep!"
+  Example Input:7
+  Example Output: Beep! 1 2 3 4 5 6 7
+  3. Program replaces digits containing 1 with "Beep!"
+  Example Input:7
+  Example Output: Beep! Boop! 2 3 4 5 6 7
+  4. Program replaces digits that with "Beep!"
+  Example Input:7
+  Example Output: Beep! Boop! 2 I'm Sorry Dave I can't do that 4 5 I'm Sorry Dave I can't do that 7
+
 # _{Beep Boop Robot}_
 
 #### _{Robot who will take a number from users and return a range of numbers from one to the chosen number with a few exceptions(listed in specs)}, {1/19/2018}_
