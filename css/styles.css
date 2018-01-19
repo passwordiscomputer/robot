@@ -10,4 +10,26 @@
 
 .jumbotronSubmit{
   background: none;
+
+}
+
+.jumbotronSubmit h1{
+  /* Chrome, Safari, Opera */
+ -webkit-animation: rainbow 1s infinite;
+ font-family: 'Alfa Slab One', cursive;
+
+}
+
+#numberList{
+  background-image: url("../img/rainbow.gif");
+  border-radius: 10px;
+  color: white;
+}
+
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
 }

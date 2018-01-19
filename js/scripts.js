@@ -25,6 +25,7 @@ $(document).ready(function(){
   $("#robotForm").submit(function(event){
     event.preventDefault();
     $("#robot").hide();
+    $("label").hide();
     $("#robot").slideToggle();
     $("#numberList").empty();
     $(".jumbotron").addClass("jumbotronSubmit");
