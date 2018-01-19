@@ -5,6 +5,7 @@ function numberEvaluator(number){
     if (/[1]/.test(number)) {return "beep!";};
     return(number);
 }
+///function that creates than fills an array with numbers for output
 function createArray(input){
   var inputArray = [];
   var inputInt = parseInt(input)
@@ -13,10 +14,12 @@ function createArray(input){
   }
   return inputArray;
 }
-
-
+function output(input){
+  var outputArray = createArray(input);
+  outputString = outputArray.join(", ");
+  return outputString;
+}
 $(document).ready(function(){
   var input = parseInt("7");
   alert(createArray(input));
-
 });
