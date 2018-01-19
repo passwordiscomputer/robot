@@ -3,15 +3,20 @@ function numberEvaluator(number){
     if (number%3 === 0) {return "I'm sorry, Dave. I'm afraid I can't do that.";};
     if (/[0]/.test(number)) {return "boop!";};
     if (/[1]/.test(number)) {return "beep!";};
-    return(number)
+    return(number);
 }
-// function output(userInput){
-//
-// }
+function createArray(input){
+  var inputArray;
+  var inputInt = parseInt(input)
+  for (var i = 0; i <= inputInt; i++) {
+    inputArray.push(numberEvaluator(i));
+  }
+  return inputArray;
+}
 
 
 $(document).ready(function){
   var input = parseInt("7");
-  alert(output(input))
+  alert(createArray(input))
 
 }
