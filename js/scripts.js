@@ -6,7 +6,7 @@ function numberEvaluator(number){
     return(number);
 }
 function createArray(input){
-  var inputArray;
+  var inputArray = [];
   var inputInt = parseInt(input)
   for (var i = 0; i <= inputInt; i++) {
     inputArray.push(numberEvaluator(i));
@@ -15,8 +15,8 @@ function createArray(input){
 }
 
 
-$(document).ready(function){
+$(document).ready(function(){
   var input = parseInt("7");
-  alert(createArray(input))
+  alert(createArray(input));
 
-}
+});
