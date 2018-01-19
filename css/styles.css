@@ -1,3 +1,9 @@
 .jumbotron{
   background-image: url('../img/circuit.png');
 }
+#robot{
+  display: none;
+}
+.submitted{
+  background-image: url('../img/disco.gif');
+}
