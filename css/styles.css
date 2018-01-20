@@ -4,14 +4,20 @@
 #robot{
   display: none;
 }
+#coconut{
+  display: none;
+  width: 95%;
+}
 .bodySubmit{
   background-image: url('../img/disco.gif');
 }
-
+.bodyClick{
+  background-image: url('../img/palmtree.gif');
+}
 .jumbotronSubmit{
   background: none;
-
 }
+
 
 .jumbotronSubmit h1{
   /* Chrome, Safari, Opera */
@@ -25,6 +31,8 @@
   border-radius: 10px;
   color: white;
 }
+
+
 
 @-webkit-keyframes rainbow{
 	20%{color: red;}

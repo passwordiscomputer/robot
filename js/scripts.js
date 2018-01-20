@@ -24,13 +24,33 @@ function output(input){
 $(document).ready(function(){
   $("#robotForm").submit(function(event){
     event.preventDefault();
+$("#numberList").empty();
+    var userInput = $("input#inputNumber").val();
+    output(userInput);
+  });
+  $("#robotForm button").one("click", function(){
+    document.getElementById('audio1').play();
     $("#robot").hide();
     $("label").hide();
     $("#robot").slideToggle();
-    $("#numberList").empty();
     $(".jumbotron").addClass("jumbotronSubmit");
     $("body").addClass("bodySubmit");
-    var userInput = $("input#inputNumber").val();
-    output(userInput);
+  })
+  $('#robot').on("click", function(){
+    document.getElementById('audio1').pause();
+    document.getElementById('audio2').play();
+    $("#robot").slideToggle();
+    $("#coconut").slideToggle();
+    $(".jumbotron").removeClass("jumbotronClick");
+    $("body").addClass("bodyClick");
+  });
+  $('#coconut').on("click", function(){
+    document.getElementById('audio2').pause();
+    document.getElementById('audio1').play();
+    $("#robot").slideToggle();
+    $("#coconut").slideToggle();
+    $(".jumbotron").removeClass("jumbotronClick");
+    $(".jumbotron").addClass("jumbotronSubmit");
+    $("body").removeClass("bodyClick");
   });
 });
